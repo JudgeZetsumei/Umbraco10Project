@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Umbraco.Models\Umbraco.Models.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Umbraco.Cms.Infrastructure" />
+    <None Remove="Umbraco.Cms.Core" />
+    <None Remove="Bergmania.OpenStreetMap" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Umbraco.Cms.Infrastructure" Version="10.1.0" />
+    <PackageReference Include="Umbraco.Cms.Core" Version="10.1.0" />
+    <PackageReference Include="Bergmania.OpenStreetMap" Version="4.0.0" />
+  </ItemGroup>
+</Project>
